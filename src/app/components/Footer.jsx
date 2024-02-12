@@ -44,7 +44,7 @@ const Footer = () => {
   return (
     <section className="text-white backdrop-blur-xl p-4 md:p-10 flex flex-col gap-20 md:flex-row justify-between rounded-t-lg">
       <div className="">
-        <Image src="/images/logo.svg" width={300} height={300} alt="Logo" />
+        <Link href="/"><Image src="/images/logo.svg" width={300} height={300} alt="Logo" /></Link>
       </div>
       <div className="">
         <h2 className="text-lg text-gray-400 font-light my-4">About</h2>
