@@ -3,7 +3,7 @@
 import React from 'react'
 import { Resend } from 'resend';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend("re_iycyNyB1_GBhPXSQAdDeFLE7k5xkdurch");
 
 
 export const SendMail = async (formdata: FormData) => {
