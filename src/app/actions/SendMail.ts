@@ -3,7 +3,7 @@
 import React from 'react'
 
 export const SendMail = async (formdata: FormData) => {
-    console.log("This is send Mail Function")
+    console.log(formdata)
     const name = formdata.get('name') as string;
     const email = formdata.get('email') as string;
     const phone = formdata.get('phone') as string;
@@ -11,6 +11,22 @@ export const SendMail = async (formdata: FormData) => {
     const requirement = formdata.get('requirement') as string;
     const description = formdata.get('description') as string;
     
+    const res = await fetch("http://localhost:3000/api/send", {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            name,
+            email,
+            phone,
+            profession,
+            requirement,
+            description
+        })
+    })
 
+    const data = await res.json()
+    return data
 }
 
