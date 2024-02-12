@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="bg-hero-pattern bg-cover bg-opacity-25 bg-fixed">
-      <body className={`${inter.className} px-2 md:px-16 2xl:max-w-screen-2xl mx-auto overflow-y-scroll`}>{children}</body>
+      <body className={`${inter.className} px-4 md:px-16 2xl:max-w-screen-2xl mx-auto overflow-y-scroll`}>{children}</body>
     </html>
   );
 }

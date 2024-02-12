@@ -30,16 +30,16 @@ const page = () => {
     return (
         <div>
             <NavBar />
-            <h1 className='text-[64px] tracking-[-4px] font-medium text-center my-11 text-white'>Our Works</h1>
+            <h1 className='text-[48px] md:text-[64px] tracking-[-4px] font-medium text-center my-11 text-white'>Our Works</h1>
             <section className='text-white mb-20'>
-                <div className='grid grid-cols-3 justify-start gap-10'>
+                <div className='grid grid-cols-1 md:grid-cols-3 justify-center md:justify-start gap-10'>
                     {
                         works.map((item, index) => (
                             <div className='' key={index}>
-                                <div className='w-[450px] h-[250px] backdrop-blur-lg bg-black/30 rounded-t-[50px] flex justify-center items-center'>
+                                <div className='w-[350px] h-[200px] md:w-[450px] md:h-[250px] backdrop-blur-lg bg-black/30 rounded-t-[50px] flex justify-center items-center'>
                                     <span className='text-4xl font-medium tracking-tighter'>{item.title}</span>
                                 </div>
-                                <div className='w-[450px] h-[150px] backdrop-blur-md bg-black/10 rounded-b-[50px]'>
+                                <div className='w-[350px] h-[200px] md:w-[450px] md:h-[250px] backdrop-blur-md bg-black/10 rounded-b-[50px]'>
                                     <div className='flex flex-row justify-between items-start p-8'>
                                         <div className='flex flex-col gap-1'>
                                             <p className='text-xl font-medium tracking-tight'>{item.title} </p>

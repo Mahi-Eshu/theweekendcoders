@@ -42,12 +42,12 @@ const Footer = () => {
   ]
 
   return (
-    <section className="text-white backdrop-blur-xl p-10 flex flex-row justify-between rounded-t-lg">
+    <section className="text-white backdrop-blur-xl p-4 md:p-10 flex flex-col gap-20 md:flex-row justify-between rounded-t-lg">
       <div className="">
         <Image src="/images/logo.svg" width={300} height={300} alt="Logo" />
       </div>
-      <div>
-        <h2 className="text-lg font-light ">About</h2>
+      <div className="">
+        <h2 className="text-lg text-gray-400 font-light my-4">About</h2>
         <div className="flex flex-col gap-2 justify-start text-white text-lg tracking-tight">
           {Links.map((link, index) => (
             <Link
@@ -60,22 +60,22 @@ const Footer = () => {
           ))}
         </div>
       </div>
-      <div className="flex flex-col justify-between">
-        <div className="flex flex-row gap-20">
+      <div className="flex flex-col justify-between gap-20">
+        <div className="flex flex-col md:flex-row gap-4 md:gap-20">
           <div>
-            <h2 className="text-lg font-light">Contact</h2>
+            <h2 className="text-lg text-gray-400 font-light my-4">Contact</h2>
             <div className="flex flex-col justify-start text-white text-lg tracking-tight">
               <p>9789260864</p>
             </div>
           </div>
           <div>
-            <h2 className="text-lg font-light">Email</h2>
+            <h2 className="text-lg text-gray-400 font-light my-4">Email</h2>
             <div className="flex flex-col justify-start text-white text-lg tracking-tight">
               <p>theweekendcodershq.gmail.com</p>
             </div>
           </div>
         </div>
-        <div className="flex gap-10">
+        <div className="flex flex-col md:flex-row gap-4 md:gap-10">
             {
                 socialLinks.map((link, index) => (
                     <Link href={link.link} target="_blank" className="text-lg tracking-tight relative font-normal underline-offset-8 after:bg-white after:absolute after:h-[2px] after:w-0 after:bottom-0 after:left-0 after:top-7 hover:after:w-full after:transition-all after:duration-300 cursor-pointer" key={index}>{link.name}</Link>

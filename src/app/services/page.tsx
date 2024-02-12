@@ -30,12 +30,12 @@ const page = () => {
     return (
         <div>
             <NavBar />
-            <h1 className='text-[64px] tracking-[-4px] my-11 font-medium text-center text-white'>Services</h1>
+            <h1 className='text-[48px] md:text-[64px] tracking-[-4px] my-11 font-medium text-center text-white'>Services</h1>
             <section className=' text-white mb-11'>
                 <div className='flex flex-row flex-wrap justify-center gap-10'>
                     {
                         services.map((service, index) => (
-                            <div className='relative border-2 border-white rounded-3xl w-[450px] h-[540px] p-10 backdrop-blur-xl' key={index}>
+                            <div className='relative border-2 border-white rounded-3xl w-[450px] h-[580px] p-10 backdrop-blur-xl' key={index}>
                                 <h1 className='text-[32px] tracking-[-2px] font-medium text-left'>
                                     {service.title}
                                 </h1>
