@@ -31,7 +31,7 @@ const page = () => {
         <div>
             <NavBar />
             <h1 className='text-[48px] md:text-[64px] tracking-[-4px] my-11 font-medium text-center text-white'>Services</h1>
-            <section className=' text-white mb-11'>
+            <section className='px-4 md:px-16 text-white mb-11'>
                 <div className='flex flex-row flex-wrap justify-center gap-10'>
                     {
                         services.map((service, index) => (

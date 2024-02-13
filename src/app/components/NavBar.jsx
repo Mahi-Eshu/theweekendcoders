@@ -24,7 +24,7 @@ const NavBar = () => {
   ]
 
   return (
-    <div className="my-14 flex flex-row justify-between">
+    <div className="my-14 px-4 md:px-16 flex flex-row justify-between">
       <div>
         <Link href='/'><Image src="/images/logo.svg" width={300} height={300} alt="Logo" /></Link>
       </div>

@@ -9,7 +9,7 @@ const page = () => {
         <div>
             <NavBar />
             <h1 className='text-[48px] md:text-[64px] tracking-[-4px] font-medium text-center my-11 text-white'>Contact Us</h1>
-            <section className='text-white'>
+            <section className='px-4 md:px-16 text-white'>
                 <Form />
             </section>
 

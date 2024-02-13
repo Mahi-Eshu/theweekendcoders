@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <div className="my-24 tracking-[-3px]">
+    <div className="my-24 px-4 md:px-16 tracking-[-3px]">
       <div className=" md:items-start leading-tight">
         <h1 className="text-[40px] text-white md:text-[64px] font-normal">
           Coffee, Code, Clients.
