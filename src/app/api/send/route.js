@@ -115,29 +115,27 @@ export const POST = async (req, res) => {
             "Error sending form submission email to the admin:",
             error
           );
-          // res.status(500).send("Internal Server Error");
-          return NextResponse.json(
-            { error: "Internal Server Error" },
-            { status: 500 }
-          );
+          res.status(500).send("Internal Server Error");
+          // return NextResponse.json(
+          //   { error: "Internal Server Error", status: 500 }
+          // );
         } else {
           console.log("Form submission email sent to the admin");
-          // res.status(200).send("Form submitted successfully");
-          return NextResponse.json(
-            { message: "Form submitted successfully" },
-            { status: 200 }
-          );
+          res.status(200).send("Form submitted successfully");
+          // return NextResponse.json(
+          //   { message: "Form submitted successfully", status: 200 }
+          // );
         }
       });
 
-      // return NextResponse.json(
-      //   {
-      //     status: 200,
-      //   },
-      //   {
-      //     message: "Email Sent Successfully",
-      //   }
-      // );
+      return NextResponse.json(
+        {
+          status: 200,
+        },
+        {
+          message: "Email Sent Successfully",
+        }
+      );
     } catch (error) {
       console.error(error);
       return NextResponse.json(

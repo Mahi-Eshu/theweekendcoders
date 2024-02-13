@@ -36,10 +36,10 @@ const page = () => {
                     {
                         works.map((item, index) => (
                             <div className='' key={index}>
-                                <div className='w-[350px] h-[200px] md:w-[450px] md:h-[250px] backdrop-blur-lg bg-black/30 rounded-t-[50px] flex justify-center items-center'>
+                                <div className='w-[350px] h-[200px] md:w-[430px] md:h-[250px] backdrop-blur-lg bg-black/30 rounded-t-[50px] flex justify-center items-center'>
                                     <span className='text-4xl font-medium tracking-tighter'>{item.title}</span>
                                 </div>
-                                <div className='w-[350px] h-[200px] md:w-[450px] md:h-[250px] backdrop-blur-md bg-black/10 rounded-b-[50px]'>
+                                <div className='w-[350px] h-[200px] md:w-[430px] md:h-[200px] backdrop-blur-md bg-black/10 rounded-b-[50px]'>
                                     <div className='flex flex-row justify-between items-start p-8'>
                                         <div className='flex flex-col gap-1'>
                                             <p className='text-xl font-medium tracking-tight'>{item.title} </p>
