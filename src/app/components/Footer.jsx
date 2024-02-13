@@ -42,7 +42,7 @@ const Footer = () => {
   ]
 
   return (
-    <section className="text-white backdrop-blur-xl p-4 md:p-10 flex flex-col gap-20 md:flex-row justify-between rounded-t-lg">
+    <section className="text-white backdrop-blur-xl px-4 py-10 lg:p-10 flex flex-col gap-16 lg:flex-row justify-between rounded-t-lg">
       <div className="">
         <Link href="/"><Image src="/images/logo.svg" width={300} height={300} alt="Logo" /></Link>
       </div>

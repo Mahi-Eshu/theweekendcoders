@@ -32,7 +32,7 @@ const page = () => {
             <NavBar />
             <h1 className='text-[48px] md:text-[64px] tracking-[-4px] font-medium text-center my-11 text-white'>Our Works</h1>
             <section className='px-4 md:px-16 text-white mb-20'>
-                <div className='grid grid-cols-1 md:grid-cols-3 justify-center md:justify-start gap-10'>
+                <div className=' flex flex-col justify-center items-center xl:grid xl:grid-cols-3 xl:justify-start gap-10'>
                     {
                         works.map((item, index) => (
                             <div className='' key={index}>
