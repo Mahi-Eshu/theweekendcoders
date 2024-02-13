@@ -11,6 +11,7 @@ const Form = () => {
   return (
     <form ref={ref} action={async (formData) => {
         const result = await SendMail(formData)
+        console.log(result)
         if(result.status === 200) {
             
             alert('Thank you for contacting us. We will get back to you soon.')
