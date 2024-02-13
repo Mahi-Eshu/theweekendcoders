@@ -83,51 +83,61 @@ export const POST = async (req, res) => {
   
   `;
 
-  const customerMailOptions = {
-    from: "theweekendcodershq@gmail.com", // Replace with your email
-    to: email,
-    subject: `Thank you for contacting us ${name}`,
-    html: emailTemplate,
-    
-  };
+      const customerMailOptions = {
+        from: "theweekendcodershq@gmail.com", // Replace with your email
+        to: email,
+        subject: `Thank you for contacting us ${name}`,
+        html: emailTemplate,
+      };
 
-  transporter.sendMail(customerMailOptions, (error) => {
-    if (error) {
-      console.error(
-        "Error sending acknowledgment email to the customer:",
-        error
-      );
-    } else {
-      console.log("Acknowledgment email sent to the customer");
-    }
-  });
-
-  // Send form submission email to the admin
-  const adminMailOptions = {
-    from: "theweekendcodershq@gmail.com", // Replace with your email
-    to: "theweekendcodershq@gmail.com", // Replace with admin email
-    subject: "New Form Submission",
-    text: createAdminEmail(),
-  };
-
-  transporter.sendMail(adminMailOptions, (error) => {
-    if (error) {
-      console.error("Error sending form submission email to the admin:", error);
-      res.status(500).send("Internal Server Error");
-    } else {
-      console.log("Form submission email sent to the admin");
-      res.status(200).send("Form submitted successfully");
-    }
-  });
-
-      return NextResponse.json(
-        {
-          status: 200,
-        },
-        {
-          message: "Email Sent Successfully",
+      transporter.sendMail(customerMailOptions, (error) => {
+        if (error) {
+          console.error(
+            "Error sending acknowledgment email to the customer:",
+            error
+          );
+        } else {
+          console.log("Acknowledgment email sent to the customer");
         }
-      );
+      });
+
+      // Send form submission email to the admin
+      const adminMailOptions = {
+        from: "theweekendcodershq@gmail.com", // Replace with your email
+        to: "theweekendcodershq@gmail.com", // Replace with admin email
+        subject: "New Form Submission",
+        text: createAdminEmail(),
+      };
+
+      transporter.sendMail(adminMailOptions, (error) => {
+        if (error) {
+          console.error(
+            "Error sending form submission email to the admin:",
+            error
+          );
+          // res.status(500).send("Internal Server Error");
+          return NextResponse.json(
+            { error: "Internal Server Error" },
+            { status: 500 }
+          );
+        } else {
+          console.log("Form submission email sent to the admin");
+          // res.status(200).send("Form submitted successfully");
+          return NextResponse.json(
+            { message: "Form submitted successfully" },
+            { status: 200 }
+          );
+        }
+      });
+
+      // return NextResponse.json(
+      //   {
+      //     status: 200,
+      //   },
+      //   {
+      //     message: "Email Sent Successfully",
+      //   }
+      // );
     } catch (error) {
       console.error(error);
       return NextResponse.json(

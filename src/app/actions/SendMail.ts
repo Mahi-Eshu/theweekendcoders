@@ -1,9 +1,6 @@
 "use server"
 
-import React from 'react'
-
 export const SendMail = async (formdata: FormData) => {
-    console.log(formdata)
     const name = formdata.get('name') as string;
     const email = formdata.get('email') as string;
     const phone = formdata.get('phone') as string;
@@ -26,7 +23,7 @@ export const SendMail = async (formdata: FormData) => {
         })
     })
 
-    const data = await res.json()
+    const data = await res.json();
     return data
 }
 

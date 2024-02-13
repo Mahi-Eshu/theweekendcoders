@@ -19,7 +19,7 @@ const NavBar = () => {
     },
     {
       name: "Contact Us",
-      href: "/contact_us?services=none"
+      href: "/contact_us"
     }
   ]
 
