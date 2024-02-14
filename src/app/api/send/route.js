@@ -18,7 +18,7 @@ export const POST = async (req, res) => {
         auth: {
           user: "theweekendcodershq@gmail.com", // Replace with your email
           pass: "fjbb cldz mzll ahzq", // Replace with your email password or use an app-specific password
-          
+
         },
       });
 
@@ -90,7 +90,7 @@ export const POST = async (req, res) => {
         html: emailTemplate,
       };
 
-      transporter.sendMail(customerMailOptions, (error) => {
+      await transporter.sendMail(customerMailOptions, (error) => {
         if (error) {
           console.error(
             "Error sending acknowledgment email to the customer:",
@@ -109,7 +109,7 @@ export const POST = async (req, res) => {
         text: createAdminEmail(),
       };
 
-      transporter.sendMail(adminMailOptions, (error) => {
+      await transporter.sendMail(adminMailOptions, (error) => {
         if (error) {
           console.error(
             "Error sending form submission email to the admin:",
