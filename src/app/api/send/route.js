@@ -89,16 +89,20 @@ export const POST = async (req, res) => {
         html: emailTemplate,
       };
 
-      await transporter.sendMail(customerMailOptions, (error) => {
-        if (error) {
-          console.error(
-            "Error sending acknowledgment email to the customer:",
-            error
-          );
-        } else {
-          console.log("Acknowledgment email sent to the customer");
-        }
-      });
+      try{
+        await transporter.sendMail(customerMailOptions, (error) => {
+          if (error) {
+            console.error(
+              "Error sending acknowledgment email to the customer:",
+              error
+            );
+          } else {
+            console.log("Acknowledgment email sent to the customer");
+          }
+        });
+      }catch(error){
+        console.log(error)
+      }
 
       // Send form submission email to the admin
       const adminMailOptions = {
@@ -108,6 +112,7 @@ export const POST = async (req, res) => {
         text: createAdminEmail(),
       };
 
+     try{
       await transporter.sendMail(adminMailOptions, (error) => {
         if (error) {
           console.error(
@@ -126,6 +131,9 @@ export const POST = async (req, res) => {
           );
         }
       });
+     }catch(error){
+         console.log("Error sending form submission email to the admin:",error);
+     }
 
       return NextResponse.json(
         {
