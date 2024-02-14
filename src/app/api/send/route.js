@@ -58,20 +58,19 @@ export const POST = async (req, res) => {
       <div class="container">
         <p>Dear Client,</p>
         <p class="content">
-          Thank you for reaching out to us! We have received your inquiry and are
+           We have received your inquiry and are
           excited to learn more about your project. <br><br>
           Our team is currently reviewing
-          the details you provided, and we will get back to you as soon as possible.
-          If we have any additional questions or need further clarification, we will
-          reach out to you promptly. <br><br>
+          the details you provided, and we will reach out to you as soon as possible. 
           We appreciate your interest in working with us
           and look forward to the opportunity to collaborate on your project. <br><br>
           If you have any urgent questions or if there's anything else you'd like to share,
-          please don't hesitate to contact us directly to this email or call
+          don't hesitate to contact us directly to this email or call
           us. <br><br>
-          Thank you again for considering <b>theweekendcoders</b>. We value your trust
-          and confidence. <br><br>
-          Best regards,<br><br>
+
+          Thank you.<br><br>
+
+          Best regards,<br>
           Mahesh Kumar, <br>
           Team at TWC,<br>
           theweekendcoders,<br>
