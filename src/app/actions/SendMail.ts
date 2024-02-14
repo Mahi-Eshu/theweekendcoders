@@ -8,7 +8,7 @@ export const SendMail = async (formdata: FormData) => {
     const requirement = formdata.get('requirement') as string;
     const description = formdata.get('description') as string;
     
-    const res = await fetch("https://theweekendcoders.vercel.app/api/send", {
+    const res = await fetch("http://localhost:3000/api/send", {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -22,7 +22,5 @@ export const SendMail = async (formdata: FormData) => {
             description
         })
     })
-    
     return res.json()
 }
-

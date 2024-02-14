@@ -6,7 +6,7 @@ const page = () => {
     const services = [
         {
             title: "UI / UX Designs",
-            description: "Now what true engineer doesn't love challenges? Highly creative designs that challenges you to explore the possibilities of frontend engineering.",
+            description: "Now what true engineer doesn't love challenges? Highly creative designs that challenge you to explore the possibilities of frontend engineering.",
             price: "1,999"
         },
         {
@@ -21,7 +21,7 @@ const page = () => {
         },
         {
             title: "SaaS Solutions",
-            description: "Tired of cookie-cutter websites? We build unique, custom web solutions tailored to your brand and goals.",
+            description: "Build a custom software solution that fits your business needs.",
             price: "29,999"
         }
         
@@ -39,7 +39,7 @@ const page = () => {
                                 <h1 className='text-[32px] tracking-[-2px] font-medium text-left'>
                                     {service.title}
                                 </h1>
-                                <p className='my-10 text-2xl font-normal tracking-tight text-[#DDCDDE]'>
+                                <p className='my-10 text-2xl text-justify font-normal tracking-tight text-[#DDCDDE]'>
                                     {service.description}
                                 </p>
                                 <div className='absolute bottom-20 right-10'>

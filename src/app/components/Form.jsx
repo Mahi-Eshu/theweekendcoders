@@ -22,17 +22,17 @@ const Form = () => {
         <div className='flex flex-col gap-10 lg:flex-row lg:justify-between'>
             <div className='flex flex-col gap-2'>
                 <label htmlFor='name' className='text-2xl font-medium tracking-tighter'>Full Name</label>
-                <input type="text" name="name" id="name" className='backdrop-blur-md bg-black/20 p-3 lg:w-[450px] h-[60px] border-b-2 rounded-sm border-white placeholder:text-white' placeholder='Enter Your Name' required/>
+                <input type="text" name="name" id="name" autoComplete='name' className='backdrop-blur-md bg-black/20 p-3 lg:w-[450px] h-[60px] border-b-2 rounded-sm border-white placeholder:text-white' placeholder='Enter Your Name' required/>
             </div>
             <div className='flex flex-col gap-2'>
                 <label htmlFor='email' className='text-2xl font-medium tracking-tighter'>Email ID</label>
-                <input type="email" name="email" id="email" className='backdrop-blur-md bg-black/20 p-3 lg:w-[450px] h-[60px] border-b-2 rounded-sm border-white placeholder:text-white' placeholder='Enter Your Email' required/>
+                <input type="email" name="email" id="email" autoComplete='email' className='backdrop-blur-md bg-black/20 p-3 lg:w-[450px] h-[60px] border-b-2 rounded-sm border-white placeholder:text-white' placeholder='Enter Your Email' required/>
             </div>
         </div>
         <div className='flex flex-col gap-10 lg:flex-row lg:justify-between'>
             <div className='flex flex-col gap-2'>
                 <label htmlFor='phone' className='text-2xl font-medium tracking-tighter'>Phone Number</label>
-                <input type="text" name="phone" id="phone" className='backdrop-blur-md bg-black/20 p-3 lg:w-[450px] h-[60px] border-b-2 rounded-sm border-white placeholder:text-white' maxLength={10} placeholder='Enter Your Phone Number' required/>
+                <input type="text" name="phone" id="phone" autoComplete='phone' className='backdrop-blur-md bg-black/20 p-3 lg:w-[450px] h-[60px] border-b-2 rounded-sm border-white placeholder:text-white' maxLength={10} placeholder='Enter Your Phone Number' required/>
             </div>
             <div className='flex flex-col gap-2'>
                 <label htmlFor='profession' className='text-2xl font-medium tracking-tighter'>Profession</label>

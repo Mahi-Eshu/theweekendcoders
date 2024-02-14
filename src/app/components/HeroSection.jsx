@@ -13,15 +13,15 @@ const HeroSection = () => {
         </h1>
       </div>
       <div className="flex justify-center md:justify-start">
-      <Link href="/contact_us"><button className="my-10 px-14 py-7 lg:px-20 lg:py-10 backdrop-blur-lg text-white text-2xl font-medium border-b-2 border-white rounded-full">Work With Us</button></Link>
+      <Link href="/contact_us"><button className="my-10 px-14 py-7 lg:px-20 lg:py-10 backdrop-blur-0 text-white text-2xl font-medium border-2 border-gray-500 rounded-full hover:backdrop-blur-lg">Get in Touch</button></Link>
       </div>
-      <h1 className="text-[#B8B8B8] text-4xl text-center my-10">We are experts in</h1>
-    <div className="flex flex-col lg:flex-row lg:flex-wrap justify-between lg:justify-center xl:justify-between items-center gap-10 text-5xl text-white backdrop-blur-lg p-8 rounded-md lg:rounded-full">
-        <p>ReactJS</p>
-        <p>NextJS</p>
-        <p>MongoDB</p>
-        <p>Figma</p>
-        <p>WebFlow</p>
+      <h1 className="text-[#B8B8B8] text-4xl text-center my-20">We are experts in</h1>
+    <div className="flex flex-col lg:flex-row lg:flex-wrap justify-between lg:justify-center xl:justify-between items-center gap-10 text-5xl text-white backdrop-blur-lg p-8 rounded-md border-2 border-gray-500 lg:rounded-full">
+        <p className="hover:text-orange-300">ReactJS</p>
+        <p className="hover:text-gray-200">NextJS</p>
+        <p className="hover:text-green-300">MongoDB</p>
+        <p className="hover:text-purple-300">Figma</p>
+        <p className="hover:text-blue-300">WebFlow</p>
     </div>
     </div>
   );

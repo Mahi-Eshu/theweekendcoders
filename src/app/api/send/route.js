@@ -18,6 +18,7 @@ export const POST = async (req, res) => {
         auth: {
           user: "theweekendcodershq@gmail.com", // Replace with your email
           pass: "fjbb cldz mzll ahzq", // Replace with your email password or use an app-specific password
+          
         },
       });
 
