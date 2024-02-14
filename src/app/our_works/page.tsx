@@ -30,7 +30,7 @@ const page = () => {
     return (
         <div>
             <NavBar />
-            <h1 className='text-[48px] md:text-[64px] tracking-[-4px] font-medium text-center my-11 text-white'>Our Works</h1>
+            <h1 className='text-[48px] md:text-[64px] tracking-[-4px] font-medium text-center lg:my-14 text-white'>Showcase</h1>
             <section className='px-4 md:px-16 text-white mb-20'>
                 <div className=' flex flex-col justify-center items-center lg:grid lg:grid-cols-2  xl:grid-cols-3 xl:justify-start gap-10'>
                     {

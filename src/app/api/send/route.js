@@ -58,7 +58,7 @@ export const POST = async (req, res) => {
       <div class="container">
         <p>Dear Client,</p>
         <p class="content">
-           We have received your inquiry and are
+          We have received your inquiry and are
           excited to learn more about your project. <br><br>
           Our team is currently reviewing
           the details you provided, and we will reach out to you as soon as possible. 

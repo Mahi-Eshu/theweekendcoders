@@ -14,7 +14,7 @@ const NavBar = () => {
       href: "/services"
     },
     {
-      name: "Our Works",
+      name: "Showcase",
       href: "/our_works"
     },
     {
